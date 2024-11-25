@@ -140,7 +140,7 @@ jobs:
       run: terraform init
 
       
-    - name: Terraform Plan
+    - name: Terraform Plan -lock=false
       if: ${{ github.event.inputs.action  == 'plan' }}
       working-directory: eks
       # Generates an execution plan for Terraform
