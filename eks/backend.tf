@@ -7,7 +7,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "niks-ews-baket2330"
+    bucket         = "niks-aws-bucket1555"
     region         = "us-east-2"
     key            = "eks/terraform.tfstate"
     dynamodb_table = "Lock-Files"
